@@ -4,7 +4,7 @@ import pandas as pd
 from fastapi import FastAPI, UploadFile, File
 
 
-app = FastAPI(docs_url='/')
+app = FastAPI(docs_url='/', title="Oficina DM BIMaster - PUC-Rio")
 
 # Carregar modelo
 pipeline = joblib.load('breast_pipeline.pkl')
