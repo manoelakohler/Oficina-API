@@ -5,7 +5,7 @@ from art import tprint
 
 def main(args):
     tprint('Oficina - Data Mining')
-    os.system("uvicorn app:app --reload " + '--port ' + args.port)
+    os.system("uvicorn app:app --reload --port " + args.port)
 
 
 if __name__ == '__main__':
